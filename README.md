@@ -4,7 +4,7 @@ A user directory that displays profile cards in a responsive grid, with a search
 box that filters results as you type. Built with plain HTML, CSS and JavaScript —
 no frameworks or libraries.
 
-**Live demo:** [https:.//sakshamagrawalcode-cpu.github.io/user-directory-search/]
+**Live demo:** [https://sakshamagrawalcode-cpu.github.io/user-directory-search/]
 
 ![Screenshot](screenshot.png)
 
