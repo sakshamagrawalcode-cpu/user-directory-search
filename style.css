@@ -1,0 +1,86 @@
+
+body {
+    background-color: black;
+}
+
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main_div {
+    gap: 80px;
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   justify-items: center;
+    height: auto;
+    margin: 90px;
+}
+
+#search_div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 20vh;
+    margin-top: 130px;
+}
+
+#input {
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(43, 42, 42);
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+
+/* CARD */
+.card {
+    position: relative;
+    overflow: hidden;
+    
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    border-radius: 5px;
+    
+}
+.card::before {
+    content: "";
+    position: absolute;
+    height: 33%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    z-index: 1;
+    backdrop-filter: blur(4px);
+}
+
+.text {
+    z-index: 2;
+    width: 100%;
+    padding: 5px;
+    
+}
+h3,p{
+    text-align: center;
+    color: rgb(187, 128, 128);
+}
+.empty {
+    grid-column: 1 / -1;
+    color: white;
+    text-align: center;
+}
